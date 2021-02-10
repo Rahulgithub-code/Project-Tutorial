@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { CoursesModule } from './courses/courses.module';
+import { StaticPagesModule } from './static-pages/static-pages.module';
+import { AdminModule } from './admin/admin.module';
+import { AuthModule } from './auth/auth.module'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
@@ -18,7 +22,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, CoursesModule, StaticPagesModule, AuthModule, AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
