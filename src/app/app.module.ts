@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { CoursesModule } from './courses/courses.module';
 import { StaticPagesModule } from './static-pages/static-pages.module';
 import { AdminModule } from './admin/admin.module';
-import { AuthModule } from './auth/auth.module'
+import { AuthModule } from './auth/auth.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
@@ -21,10 +21,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule, CoursesModule, StaticPagesModule, AuthModule, AdminModule
+    BrowserModule, CoursesModule, StaticPagesModule, AuthModule, AdminModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){console.log('from app module')}
+
+ }

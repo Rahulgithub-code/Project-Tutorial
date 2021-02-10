@@ -17,4 +17,7 @@ import { CourseCategoriesComponent } from './course-categories/course-categories
   ],
   exports: [CourseFeaturedComponent]
 })
-export class CoursesModule { }
+export class CoursesModule {
+  constructor(){console.log('from course module')}
+  
+ }

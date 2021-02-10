@@ -13,4 +13,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     StaticPagesRoutingModule
   ]
 })
-export class StaticPagesModule { }
+export class StaticPagesModule {
+  constructor(){console.log('from static module')}
+
+ }
